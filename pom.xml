@@ -116,6 +116,13 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>all-themes</artifactId>
+			<version>1.0.8</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.primefaces.themes</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>1.0.9</version>
@@ -136,6 +143,7 @@
 
 	</dependencies>
 	<build>
+	<finalName>silvercomtech</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>

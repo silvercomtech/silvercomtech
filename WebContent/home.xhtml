@@ -7,11 +7,14 @@
 
 <h:head>
 	<title>HOME</title>
+
+
+
 </h:head>
 <h:body>
 	<ui:composition template="/template.xhtml">
 		<ui:define name="content">
-			<h:form style="margin: 0 auto; width:1100px;">
+			<h:form style="margin: 0 auto; width:1100px">
 				<div class="carousel-inner" role="listbox"
 					style="margin-left: 48px; width: 100%; height: 500px !important;">
 
@@ -43,69 +46,57 @@
 					</b:carousel>
 				</div>
 				<p:spacer height="25px"></p:spacer>
-				<p:panel id="basic"
-					style="margin-bottom:20px; background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);">
-					<p:panel
-						style=" width: 450px; background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,248,249,1) 50%, rgba(205,217,223,1) 51%, rgba(254,254,254,1) 99%, rgba(255,255,255,1) 100%);">
-						<h:outputText class="text-g-h" value="QUICK FACTS" />
-					</p:panel>
+				<p:panel id="basic" style="margin-bottom:20px; background: black">
+					<b:panel class="fnt" style=" width: 250px; background: yellow">
+						<h:outputText style="font-size:16px" value="QUICK FACTS" />
+					</b:panel>
 					<p:spacer height="5px"></p:spacer>
-					<p:panel style="margin-left:75px; margin-right:100px;">
+					<p:panel class="fnt"
+						style=" background: silver ; margin-left:75px; margin-right:100px;">
 						<h:panelGrid columns="4" cellpadding="30px" cellspacing="30px">
 
-							<p:panel
-								style=" width: 300px; background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,248,249,1) 50%, rgba(205,217,223,1) 51%, rgba(254,254,254,1) 99%, rgba(255,255,255,1) 100%);">
-								<h:outputText class="text-g"
-									value=" Silvercomtech was founded in 2018 " />
+							<p:panel style=" width: 350px; background: white">
+								<h:outputText value=" Silvercomtech was founded in 2018 " />
 							</p:panel>
 							<p:spacer width="50px"></p:spacer>
-							<p:panel
-								style=" width: 500px; background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,248,249,1) 50%, rgba(205,217,223,1) 51%, rgba(254,254,254,1) 99%, rgba(255,255,255,1) 100%);">
-								<h:outputText class="text-g"
+							<p:panel style=" width: 450px; background: lightblue">
+								<h:outputText
 									value=" It is currently Operating out of Virginia, MD " />
 							</p:panel>
 							<br />
 							<br />
 
-							<p:panel
-								style=" width: 300px; background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,248,249,1) 50%, rgba(205,217,223,1) 51%, rgba(254,254,254,1) 99%, rgba(255,255,255,1) 100%);">
-								<h:outputText class="text-g"
-									value=" Small minority owned business " />
+							<p:panel style=" width: 350px; background: orange">
+								<h:outputText value=" Small minority owned business " />
 							</p:panel>
 							<p:spacer width="50px"></p:spacer>
-							<p:panel
-								style=" width: 500px; background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,248,249,1) 50%, rgba(205,217,223,1) 51%, rgba(254,254,254,1) 99%, rgba(255,255,255,1) 100%);">
-								<h:outputText class="text-g"
+							<p:panel style=" width: 450px; background: red">
+								<h:outputText
 									value=" An Accumulation of over 30 years of experiance " />
 							</p:panel>
-
-
 						</h:panelGrid>
 					</p:panel>
-					
-					to learn more click the button to go our About us page
+					<p:spacer height="30px"></p:spacer>
 				</p:panel>
-
-				<p:spacer height="35px"></p:spacer>
-				<p:panel
-					style="margin-bottom:20px; background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);">
-					<h:panelGrid columns="2" cellpadding="10">
-						<p:graphicImage name="demo/images/godfather/godfather1.jpg" />
-						<h:outputText value="The story begins as Don Vito Corleone..." />
-					</h:panelGrid>
-				</p:panel>
-
-
-				<p:spacer height="45px"></p:spacer>
-				<p:panel
-					style="margin-bottom:20px; background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);">
-					<h:panelGrid columns="2" cellpadding="10">
-						<p:graphicImage name="demo/images/godfather/godfather1.jpg" />
-						<h:outputText value="The story begins as Don Vito Corleone..." />
-					</h:panelGrid>
-				</p:panel>
-
-
+				<p:spacer height="25px"></p:spacer>
+				<div style="width: 100%; background: white;">
+					<b:tabView activeIndex="0" class="fnt">
+						<b:tab title="Our Mission">
+							<p:spacer height="25px"></p:spacer>
+							<h:panelGrid columns="3" cellspacing="5" cellpading="5">
+								<img src="resources/img/mission.png" />
+								<p:spacer width="55px"></p:spacer>
+								<h:panelGroup class="paragraph">
+									 It can be challenging to keep up with new technologies and the ever-changing needs of business. So, how do you avoid becoming overwhelmed and enable IT to function with more agility, resiliency, and reliability? here at Silvercomtech 
+								</h:panelGroup>
+							</h:panelGrid>
+						</b:tab>
+						<b:tab title="Partners">
+							<p>This is the second tab.</p>
+						</b:tab>
+						<b:tab title="Image Tab">   ...</b:tab>
+					</b:tabView>
+				</div>
 				<p:spacer height="55px"></p:spacer>
 				<p:panel
 					style="margin-bottom:20px; background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);">
