@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<link type="text/css"
+		href="${facesContext.externalContext.requestContextPath}/resources/css/bootstrap.min.css"
+		rel="stylesheet" />
+
+	<link type="text/css"
+		href="${facesContext.externalContext.requestContextPath}/resources/css/style.css"
+		rel="stylesheet" />
+
+	<style>
+.nav navbar-nav {
+	padding-left: 10;
+	padding-right: 10;
+}
+</style>
+</h:head>
+
+
+
+<ui:composition>
+
+	<b:navBar brand="Silvercomtech" brandHref="/home.xhtml"
+		id="dropMenuExample" contentDisabled="#{navBarBean.navBarDisabled}"
+		style="margin: 0 auto;width:1100px; background: rgba(255,255,255,1);">
+		<b:navbarLinks style="align:center;"
+			contentDisabled="#{navBarBean.navBarLinksDisabled}">
+			<b:navLink class="text-g" value="Home" href="home.xtml"></b:navLink>
+
+			<b:navLink class="text-g" value="Market Place" href="#"></b:navLink>
+
+			<b:navLink class="text-g" value="About" href="#"></b:navLink>
+
+			<b:dropMenu class="text-g" value="Services"
+				contentDisabled="#{navBarBean.dropMenuDisabled}">
+				<b:navLink value="Developers" href="#"></b:navLink>
+				<b:navLink value="Apply" href="#"></b:navLink>
+				<b:navLink value="Support" href="#"></b:navLink>
+				<b:navLink></b:navLink>
+				<b:navLink header="More"></b:navLink>
+				<b:navLink value="Contact" href="#"></b:navLink>
+				<b:navLink value="Login" href="#"></b:navLink>
+			</b:dropMenu>
+
+		</b:navbarLinks>
+	</b:navBar>
+</ui:composition>
+
+</html>
