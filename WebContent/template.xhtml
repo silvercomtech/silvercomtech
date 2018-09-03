@@ -31,6 +31,11 @@
 	border: none;
 }
 
+.backgroundless2 .ui-layout-unit-content {
+	background: black;
+	border: 1;
+}
+
 .ui-layout-north {
 	z-index: 40 !important;
 	overflow: visible !important;
@@ -47,7 +52,7 @@
 
 <h:body>
 	<p:layout fullPage="true">
-		<p:layoutUnit styleClass="backgroundless" position="north" size="100"
+		<p:layoutUnit styleClass="backgroundless" position="north" size="75"
 			scrollable="false" collapsible="true" gutter="0">
 			<ui:insert style="margin-top: 0; position:relative;" name="header">
 				<ui:include src="/header.xhtml" />
@@ -57,7 +62,24 @@
 
 		<p:layoutUnit styleClass="backgroundless" position="center"
 			scrollable="true" collapsible="true" gutter="0">
-			<ui:insert  name="content"></ui:insert>
+			<ui:insert name="content"></ui:insert>
+		</p:layoutUnit>
+
+		<p:layoutUnit styleClass="backgroundless2" position="south" size="70"
+			scrollable="true" collapsible="true" gutter="0">
+			<ui:insert name="footer">
+				<p style="margin: 0 auto; width: 350px">© 2018 SILVERCOMTECH.
+					All Rights Reserved</p>
+				<div style="margin-right:425px; margin-left:425px; width: 500px;">
+					<h:link value="Contact" outcome="contact.xhtml" />
+					<p:spacer width="40px"></p:spacer>
+					<h:link value="Privacy" outcome="privacy.xhtml" />
+					<p:spacer width="40px"></p:spacer>
+					<h:link value="Term of use" outcome="termsofuse.xhtml" />
+					<p:spacer width="40px"></p:spacer>
+					<h:link value="Feedback" outcome="feedback.xhtml" />
+				</div>
+			</ui:insert>
 		</p:layoutUnit>
 	</p:layout>
 </h:body>

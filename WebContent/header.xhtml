@@ -25,17 +25,14 @@
 
 <ui:composition>
 
-	<b:navBar brand="Silvercomtech" brandHref="/home.xhtml"
-		id="dropMenuExample" contentDisabled="#{navBarBean.navBarDisabled}"
+	<b:navBar brand="Silvercomtech" brandHref = "#{request.contextPath}/home.xhtml" id="dropMenuExample"
+		contentDisabled="#{navBarBean.navBarDisabled}"
 		style="font-color: white; font-weight:bold; margin: 0 auto;width:1100px; background: black">
 		<b:navbarLinks style="align:center;font-weight:bold;"
 			contentDisabled="#{navBarBean.navBarLinksDisabled}">
-			<b:navLink value="Home" href="home.xtml"></b:navLink>
-
-			<b:navLink value="Market Place" href="#"></b:navLink>
-
-			<b:navLink value="About" href="#"></b:navLink>
-
+			<b:navLink value="Home" href="#{request.contextPath}/home.xhtml"></b:navLink>
+			<b:navLink value="Market Place" href="#{request.contextPath}/marketplace.xhtml"></b:navLink>
+			<b:navLink value="About" href="#{request.contextPath}/about.xhtml"></b:navLink>
 			<b:dropMenu value="Services"
 				contentDisabled="#{navBarBean.dropMenuDisabled}">
 				<b:navLink value="Developers" href="#"></b:navLink>
@@ -43,7 +40,7 @@
 				<b:navLink value="Support" href="#"></b:navLink>
 				<b:navLink></b:navLink>
 				<b:navLink header="More"></b:navLink>
-				<b:navLink value="Contact" href="#"></b:navLink>
+				<b:navLink value="Contact" href="#{request.contextPath}/contact.xhtml"></b:navLink>
 				<b:navLink value="Login" href="#"></b:navLink>
 			</b:dropMenu>
 
