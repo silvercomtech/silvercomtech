@@ -1,4 +1,4 @@
-.fnt {
+.fnt2 {
 	font-family: "Lucida Console", Monaco, monospace;
 	font-size: 12px;
 	letter-spacing: 2px;
@@ -31,9 +31,10 @@
 }
 
 .fa {
-	padding: 20px;
+	padding: 10px;
 	font-size: 30px;
-	width: 60px; text-align : center;
+	width: 60px;
+	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
 	text-align: center;

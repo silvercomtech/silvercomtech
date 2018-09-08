@@ -25,22 +25,33 @@
 
 <ui:composition>
 
-	<b:navBar brand="Silvercomtech" brandHref = "#{request.contextPath}/home.xhtml" id="dropMenuExample"
+	<b:navBar id="dropMenuExample"
 		contentDisabled="#{navBarBean.navBarDisabled}"
 		style="width:100%; font-weight:bold; margin: 0 auto; background: black">
-		<b:navbarLinks style="align:center;font-weight:bold;"
-			contentDisabled="#{navBarBean.navBarLinksDisabled}">
-			<b:navLink value="Home" href="#{request.contextPath}/home.xhtml"></b:navLink>
-			<b:navLink value="Market Place" href="#{request.contextPath}/marketplace.xhtml"></b:navLink>
-			<b:navLink value="About" href="#{request.contextPath}/about.xhtml"></b:navLink>
-			<b:dropMenu value="Services"
-				contentDisabled="#{navBarBean.dropMenuDisabled}">
+		<b:navbarLinks
+			style="padding-left:100px; padding-right:100px;  margin-left:100px; margin-right:100px; color:lightblue; font-weight:bold; text-transform: uppercase; align:center;font-weight:bold;">
+			<b:navLink
+				style="color:silver; font-size:20px; font-weight:bold;text-transform: uppercase;"
+				value="Silvercomtech" href="#{request.contextPath}/home.xhtml"></b:navLink>
+			<b:navLink
+				style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+				value="Home" href="#{request.contextPath}/home.xhtml"></b:navLink>
+			<b:navLink
+				style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+				value="Market Place" href="#{request.contextPath}/marketplace.xhtml"></b:navLink>
+			<b:navLink
+				style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+				value="About" href="#{request.contextPath}/about.xhtml"></b:navLink>
+			<b:dropMenu
+				style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+				value="Services" contentDisabled="#{navBarBean.dropMenuDisabled}">
 				<b:navLink value="Developers" href="#"></b:navLink>
 				<b:navLink value="Apply" href="#"></b:navLink>
 				<b:navLink value="Support" href="#"></b:navLink>
 				<b:navLink></b:navLink>
 				<b:navLink header="More"></b:navLink>
-				<b:navLink value="Contact" href="#{request.contextPath}/contact.xhtml"></b:navLink>
+				<b:navLink value="Contact"
+					href="#{request.contextPath}/contact.xhtml"></b:navLink>
 				<b:navLink value="Login" href="#"></b:navLink>
 			</b:dropMenu>
 

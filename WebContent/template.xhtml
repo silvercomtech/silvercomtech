@@ -53,7 +53,7 @@
 <h:body>
 	<p:layout fullPage="true">
 		<p:layoutUnit styleClass="backgroundless" position="north" size="55"
-			scrollable="false" collapsible="true" >
+			scrollable="false" collapsible="true">
 			<ui:insert style="margin-top: 0; position:relative;" name="header">
 				<ui:include src="/header.xhtml" />
 			</ui:insert>
@@ -66,18 +66,24 @@
 		</p:layoutUnit>
 
 		<p:layoutUnit styleClass="backgroundless2" position="south" size="70"
-			scrollable="true" collapsible="true" >
+			scrollable="true" collapsible="true">
 			<ui:insert name="footer">
-				<p style="margin: 0 auto; width: 350px"> © 2018 SILVERCOMTECH.
-					All Rights Reserved</p>
-				<div style="margin-right:425px; margin-left:425px; width: 500px;">
-					<h:link value="Contact" outcome="contact.xhtml" />
+				<p
+					style="color: lightblue; text-align: center; vertical-align: middle; line-height: 10px; margin-top: 50;">
+					© 2018 SILVERCOMTECH. All Rights Reserved</p>
+				<div
+					style="text-align: center; vertical-align: middle; line-height: 10px;">
+					<h:link style="color:lightblue; font-weight:bold;" value="Contact"
+						outcome="contact.xhtml" />
 					<p:spacer width="40px"></p:spacer>
-					<h:link value="Privacy" outcome="privacy.xhtml" />
+					<h:link style="color:lightblue; font-weight:bold;" value="Privacy"
+						outcome="privacy.xhtml" />
 					<p:spacer width="40px"></p:spacer>
-					<h:link value="Term of use" outcome="termsofuse.xhtml" />
+					<h:link style="color:lightblue; font-weight:bold;"
+						value="Term of use" outcome="termsofuse.xhtml" />
 					<p:spacer width="40px"></p:spacer>
-					<h:link value="Feedback" outcome="feedback.xhtml" />
+					<h:link style="color:lightblue; font-weight:bold;" value="Feedback"
+						outcome="feedback.xhtml" />
 				</div>
 			</ui:insert>
 		</p:layoutUnit>

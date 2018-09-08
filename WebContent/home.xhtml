@@ -44,7 +44,7 @@
 				</div>
 				<p:spacer height="25px"></p:spacer>
 				<p:panel id="basic" style="margin-bottom:20px; background: black">
-					<b:panel class="fnt" style=" width: 250px; background: yellow">
+					<b:panel class="fnt" style=" width: 250px; background: white">
 						<h:outputText style="font-size:16px" value="QUICK FACTS" />
 					</b:panel>
 					<p:spacer height="5px"></p:spacer>
@@ -56,18 +56,18 @@
 								<h:outputText value=" Silvercomtech was founded in 2018 " />
 							</p:panel>
 							<p:spacer width="50px"></p:spacer>
-							<p:panel style=" width: 450px; background: lightblue">
+							<p:panel style=" width: 450px; background: white">
 								<h:outputText
 									value=" It is currently Operating out of Virginia, MD " />
 							</p:panel>
 							<br />
 							<br />
 
-							<p:panel style=" width: 350px; background: orange">
+							<p:panel style=" width: 350px; background: white">
 								<h:outputText value=" Small minority owned business " />
 							</p:panel>
 							<p:spacer width="50px"></p:spacer>
-							<p:panel style=" width: 450px; background: red">
+							<p:panel style=" width: 450px; background: white">
 								<h:outputText
 									value=" An Accumulation of over 30 years of experiance " />
 							</p:panel>
@@ -77,8 +77,10 @@
 				</p:panel>
 				<p:spacer height="25px"></p:spacer>
 				<div style="width: 100%; background: white;">
-					<b:tabView activeIndex="0" class="fnt">
-						<b:tab title="Our Mission">
+					<b:tabView style="background:black;" activeIndex="0" class="fnt">
+						<b:tab
+							style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+							title="Our Mission">
 							<p:spacer height="25px"></p:spacer>
 							<h:panelGrid columns="3" cellspacing="5" cellpading="5">
 								<img src="resources/img/mission.png" />
@@ -87,14 +89,44 @@
 									 It can be challenging to keep up with new technologies and the ever-changing needs of business. So, how do you avoid becoming overwhelmed and enable IT to function with more agility, resiliency, and reliability? here at Silvercomtech 
 								</h:panelGroup>
 							</h:panelGrid>
+							<div style="width: 100%; height: 100px; background: black;">
+								<h:panelGrid
+									style=" margin: 0 auto; width:100%; text-align: center; vertical-align: middle;line-height: 10px; margin-top:50;"
+									columns="3">
+									<h:outputText styleClass="fnt"
+										style="color: lightblue;"
+										value=" To learn more, head to our about us page "></h:outputText>
+									<p:spacer width="100px" />
+									<b:commandButton value="Learn more"></b:commandButton>
+								</h:panelGrid>
+
+							</div>
 						</b:tab>
-						<b:tab title="Partners">
+						<b:tab
+							style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+							title="Partners">
 							<p>This is the second tab.</p>
 						</b:tab>
-						<b:tab title="Image Tab">   ...</b:tab>
+						<b:tab
+							style="color:lightblue; font-weight:bold;text-transform: uppercase;"
+							title="Image Tab">   ...</b:tab>
 					</b:tabView>
 				</div>
-				<p:spacer height="55px"></p:spacer>
+				<p:spacer height="30px"></p:spacer>
+				<div style="width: 100%; height: 100px; background: black;">
+					<h:panelGrid
+						style=" margin: 0 auto; width:1100px; text-align: center; vertical-align: middle;line-height: 10px; margin-top:50;"
+						columns="3">
+						<h:outputText styleClass="fnt"
+							style="text-transform: uppercase; color: lightblue; font-size:17px; font-weight:bold;"
+							value="Careers at Silvercomtech "></h:outputText>
+						<p:spacer width="100px" />
+						<b:commandButton value="APPLY NOW"></b:commandButton>
+					</h:panelGrid>
+
+				</div>
+				<p:spacer height="30px"></p:spacer>
+
 				<p:panel
 					style="margin-bottom:20px; background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);">
 					<h:panelGrid columns="2" cellpadding="10">
@@ -103,13 +135,14 @@
 					</h:panelGrid>
 				</p:panel>
 			</h:form>
-			<div  style="width: 100%; height: 100px; background: white;">
-			<div  style="margin: 0 auto; width:350px">
-				<a style = "height :55px;" href="#" class="fa fa-facebook"></a>
-				<a style = "height :55px;" href="#" class="fa fa-twitter"></a>
-				<a style = "height :55px;" href="#" class="fa fa-google"></a>
-				<a style = "height :55px;" href="#" class="fa fa-linkedin"></a>
-				<a style = "height :55px;" href="#" class="fa fa-instagram"></a>
+			<div style="width: 100%; height: 100px; background: white;">
+				<div
+					style="margin: 0 auto; width: 350px; text-align: center; vertical-align: middle; line-height: 10px; margin-top: 50;">
+					<a style="height: 55px;" href="#" class="fa fa-facebook"></a> <a
+						style="height: 55px;" href="#" class="fa fa-twitter"></a> <a
+						style="height: 55px;" href="#" class="fa fa-google"></a> <a
+						style="height: 55px;" href="#" class="fa fa-linkedin"></a> <a
+						style="height: 55px;" href="#" class="fa fa-instagram"></a>
 				</div>
 			</div>
 		</ui:define>
