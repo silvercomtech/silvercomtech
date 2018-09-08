@@ -144,7 +144,7 @@
 	</dependencies>
 	<build>
 	<finalName>silvercomtech</finalName>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>src/test/java</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

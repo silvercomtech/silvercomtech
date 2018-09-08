@@ -11,9 +11,92 @@
 <h:body>
 	<ui:composition template="/template.xhtml">
 		<ui:define name="content">
-			<h:form style="margin: 0 auto; width:1100px">
 
+			<h:form style="margin: 0 auto; width:1100px">
+				<p:spacer height="50px"></p:spacer>
+				<div style="background: white;">
+					<p:spacer height="20px"></p:spacer>
+					<div style="margin-left: 10px; margin-right: 10px;">
+						<h:panelGrid columns="2" cellpadding="15">
+							<h:outputText styleClass="fnt"
+								style="font-weight:bold; font-size:14px;" value=" Email: " />
+							<h:inputText value="#{feedback.email}" size="50">
+								<p:ajax event="valueChange" />
+							</h:inputText>
+						</h:panelGrid>
+						<br /> <br />
+						<h:panelGrid columns="1" cellpadding="5">
+							<h:outputText styleClass="fnt"
+								style="font-weight:bold; font-size:14px;" value=" Rate Us " />
+							<p:rating size="25" value="#{feedback.rating}" />
+						</h:panelGrid>
+						<br />
+						<h:outputText styleClass="fnt"
+							style="font-weight:bold; font-size:14px;"
+							value="Overall satisfaction with our service" />
+						<br />
+						<h:panelGrid columns="2" style="margin-bottom:10px">
+
+							<p:outputLabel styleClass="fnt" for="Friendliness"
+								value="Friendliness:" />
+							<h:selectOneRadio styleClass="fnt" layout="responsive"
+								id="Friendliness" value="#{feedback.friendliness}">
+								<f:selectItem itemLabel=" Very satisfied "
+									itemValue="Very satisfied" />
+								<f:selectItem itemLabel="  Satisfied " itemValue="Satisfied" />
+								<f:selectItem itemLabel="  Neutral  " itemValue="Neutral" />
+								<f:selectItem itemLabel="  Unsatisfied  " itemValue="Satisfied" />
+								<f:selectItem itemLabel="  Very unsatisfied "
+									itemValue="Neutral" />
+							</h:selectOneRadio>
+
+							<p:outputLabel styleClass="fnt" for="Knowledge"
+								value="Knowledge:" />
+							<h:selectOneRadio styleClass="fnt" id="Knowledge"
+								value="#{feedback.Knowledge}">
+								<f:selectItem itemLabel="Very satisfied"
+									itemValue="Very satisfied" />
+								<f:selectItem itemLabel="Satisfied" itemValue="Satisfied" />
+								<f:selectItem itemLabel="Neutral" itemValue="Neutral" />
+								<f:selectItem itemLabel="Unsatisfied" itemValue="Satisfied" />
+								<f:selectItem itemLabel="Very unsatisfied" itemValue="Neutral" />
+							</h:selectOneRadio>
+
+							<p:outputLabel styleClass="fnt" for="Quickness"
+								value="Quickness:" />
+							<h:selectOneRadio styleClass="fnt" id="Quickness"
+								value="#{feedback.quickness}">
+								<f:selectItem itemLabel="Very satisfied"
+									itemValue="Very satisfied" />
+								<f:selectItem itemLabel="Satisfied" itemValue="Satisfied" />
+								<f:selectItem itemLabel="Neutral" itemValue="Neutral" />
+								<f:selectItem itemLabel="Unsatisfied" itemValue="Satisfied" />
+								<f:selectItem itemLabel="Very unsatisfied" itemValue="Neutral" />
+							</h:selectOneRadio>
+						</h:panelGrid>
+						<br /> <br />
+						<h:outputText styleClass="fnt"
+							style="font-weight:bold; font-size:14px;"
+							value="Additional Comments: " />
+						<br />
+						<h:inputTextarea cols="75" rows="5" id="message"
+							value="#{feedback.message}" required="true"
+							requiredMessage="Required" />
+						<h:message for="message" style="color:red" />
+					</div>
+					<p:spacer height="50px"></p:spacer>
+					<h:commandButton value="submit"></h:commandButton>
+				</div>
 			</h:form>
+			<div style="width: 100%; height: 100px; background: white;">
+				<div style="margin: 0 auto; width: 350px">
+					<a style="height: 55px;" href="#" class="fa fa-facebook"></a> <a
+						style="height: 55px;" href="#" class="fa fa-twitter"></a> <a
+						style="height: 55px;" href="#" class="fa fa-google"></a> <a
+						style="height: 55px;" href="#" class="fa fa-linkedin"></a> <a
+						style="height: 55px;" href="#" class="fa fa-instagram"></a>
+				</div>
+			</div>
 		</ui:define>
 	</ui:composition>
 </h:body>
